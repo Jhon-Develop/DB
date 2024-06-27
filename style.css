@@ -86,6 +86,13 @@ h2{
     margin: 20px 10px;
 }
 
+.code-editor {
+    width: 100%;
+    height: 50px; 
+
+    overflow: hidden;
+}
+
 nav{
     width: 100%;
     height: 10rem;
@@ -108,19 +115,17 @@ nav{
     padding: 20px;
     border-radius: 5px;
     justify-content: space-evenly;
-}
 
-.menu ul li a{
-    color: var(--white-);
+    > li a{
+        color: var(--white-);
+    }
 }
 
 .menu ul li a:hover{
-    color: var(--black-);
-    background-color: var(--white-);
+    color: var(--primary-);
 
     border-radius: 5px;
-    padding: 5px;
-    transform: scale(1.1);
+    transform: scale(1.5);
     transition: all 0.3s ease-in-out;
 }
 
@@ -130,4 +135,54 @@ nav{
     font-weight: 600;
     color: var(--black-);
     margin: 20px 10px;
+}
+
+
+
+.contact-content{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 20px 0px;
+    font-size: 32px;
+}
+
+.contact-links {
+    display: flex;
+
+    gap: 45px;
+
+    > a{
+        color: var(--black-);
+    }
+}
+
+.contact-links a:hover{
+    color: var(--primary-);
+
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+#backToTopBtn {
+    display: none;
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: var(--primary-);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#backToTopBtn:hover {
+    background-color: var(--secondary-);
 }

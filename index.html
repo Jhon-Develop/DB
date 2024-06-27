@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jhon-Develop</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-vsc-dark.min.css" rel="stylesheet" />
 </head>
+
 <body>
     <main class="container">
         <nav>
@@ -26,7 +29,9 @@
             <h2>About Work</h2>
             <div>
                 <p class="about-work">
-                    This work consists of queries to a database using MySQL, which is a system based on queries and stands for structure query language. Throughout this page you will be seeing certain categories such as normal queries, updates to the database and queries. to delete information from the database.
+                    This work consists of queries to a database using MySQL, which is a system based on queries and
+                    stands for structure query language. Throughout this page you will be seeing certain categories such
+                    as normal queries, updates to the database and queries. to delete information from the database.
                 </p>
                 <p class="about-work">
                     I hope it can serve as help and guide to some queries and solutions to some specific problems.
@@ -38,462 +43,878 @@
             <div class="cards-container">
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-1.png" alt="">
+                        <img src="./assets/Query/Query-1.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>1. Selecciona todos los usuarios cuyo nombre contiene la letra ‘a’.</h3>
                         <p class="description-cards">
-                            Aqui podemos ver el resultado de la sigueinte query: <code>SELECT * FROM users WHERE names LIKE '%A%' OR names LIKE '%a%';</code>
+                            Esta consulta selecciona todos los registros de la tabla users donde el campo names contiene la letra 'a' o 'A'.
+                            <div id="code-editor-1" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-2.png" alt="">
+                        <img src="./assets/Query/Query-2.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>2. Selecciona todos los usuarios cuyo apellido empieza con ‘S’.</h3>
                         <p class="description-cards">
-    
+                            Esta consulta selecciona todos los registros donde el campo last_name empieza con la letra 'S'.
+                            <div id="code-editor-2" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-3.png" alt=""> 
+                        <img src="./assets/Query/Query-3.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>3. Selecciona todos los usuarios cuyo correo electrónico personal termina en
-                        ‘gmail.com’.</h3>
+                            ‘gmail.com’.</h3>
                         <p class="description-cards">
-    
+                            Selecciona todos los usuarios cuyo campo email termina con '@gmail.com'.
+                            <div id="code-editor-3" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-4.png" alt="">
+                        <img src="./assets/Query/Query-4.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>4. Selecciona los nombres y correos electrónicos de todos los usuarios ordenados
                             alfabéticamente por nombre.</h3>
                         <p class="description-cards">
-    
+                            Selecciona los campos name y email de todos los usuarios y los ordena alfabéticamente por name.
+                            <div id="code-editor-4" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-5.png" alt="">
+                        <img src="./assets/Query/Query-5.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>5. Selecciona los usuarios ordenados por su edad de forma descendente.</h3>
                         <p class="description-cards">
-    
+                            Selecciona todos los registros de la tabla users y los ordena por el campo age de forma descendente.
+                            <div id="code-editor-5" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-6.png" alt="">
+                        <img src="./assets/Query/Query-6.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>6. Selecciona los primeros 10 usuarios ordenados por su fecha de creación.</h3>
                         <p class="description-cards">
-    
+                            Selecciona los primeros 10 registros de la tabla users ordenados por la fecha de creación (created_at) en orden ascendente.
+                            <div id="code-editor-6" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-7.png" alt="">
+                        <img src="./assets/Query/Query-7.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>7. Selecciona los últimos 5 usuarios ordenados por su fecha de actualización.</h3>
                         <p class="description-cards">
-    
+                            Selecciona los últimos 5 registros de la tabla users ordenados por la fecha de actualización (updated_at) en orden descendente.
+                            <div id="code-editor-7" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-8.png" alt="">
+                        <img src="./assets/Query/Query-8.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>8. Selecciona los usuarios que tienen entre 2 y 4 hijos.</h3>
                         <p class="description-cards">
-    
+                            Selecciona todos los registros donde el número de hijos (children_count) está entre 2 y 4 inclusive.
+                            <div id="code-editor-8" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-9.png" alt="">
+                        <img src="./assets/Query/Query-9.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>9. Selecciona los usuarios cuyo país no es ‘USA’.</h3>
                         <p class="description-cards">
-    
+                            Selecciona todos los registros donde el campo country no es 'USA'.
+                            <div id="code-editor-9" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-10.png" alt="">
+                        <img src="./assets/Query/Query-10.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>10. Selecciona los usuarios cuyo patrimonio es mayor que 100000.</h3>
                         <p class="description-cards">
-    
+                            Selecciona todos los registros donde el patrimonio (net_worth) es mayor que 100000.
+                            <div id="code-editor-10" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-11.png" alt="">
+                        <img src="./assets/Query/Query-11.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>11. Selecciona los usuarios con el género ‘female’ y estado ‘active’.</h3>
                         <p class="description-cards">
-    
+                            Selecciona todos los registros donde el género (gender) es 'female' y el estado (status) es 'active'.
+                            <div id="code-editor-11" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-12.png" alt="">
+                        <img src="./assets/Query/Query-12.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>12. Selecciona los usuarios con correos electrónicos personales que contienen ‘work’.</h3>
                         <p class="description-cards">
-    
+                            Selecciona todos los registros donde el campo email contiene la palabra 'work'.
+                            <div id="code-editor-12" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-13.png" alt="">
+                        <img src="./assets/Query/Query-13.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>13. Selecciona los usuarios cuya ciudad empieza con ‘M’.</h3>
                         <p class="description-cards">
-    
+                            Selecciona todos los registros donde el campo city empieza con la letra 'M'.
+                            <div id="code-editor-13" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-14.png" alt="">
+                        <img src="./assets/Query/Query-14.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>14. Selecciona el usuario más joven.</h3>
                         <p class="description-cards">
-    
+                            Selecciona el registro del usuario más joven, ordenando la tabla users por edad (age) en orden ascendente y limitando el resultado a 1 registro.
+                            <div id="code-editor-14" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-15.png" alt="">
+                        <img src="./assets/Query/Query-15.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>15. Selecciona el usuario más viejo.</h3>
                         <p class="description-cards">
-    
+                            Selecciona el registro del usuario más viejo, ordenando la tabla users por edad (age) en orden descendente y limitando el resultado a 1 registro.
+                            <div id="code-editor-15" class="code-editor"></div> 
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-16.png" alt="">
+                        <img src="./assets/Query/Query-16.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>16. Selecciona el usuario con el patrimonio más alto.</h3>
                         <p class="description-cards">
-    
+                            Selecciona el registro del usuario con el patrimonio (net_worth) más alto, ordenando en orden descendente y limitando a 1 registro.
+                            <div id="code-editor-16" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-17.png" alt="">
+                        <img src="./assets/Query/Query-17.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>17. Selecciona el usuario con el patrimonio más bajo.</h3>
                         <p class="description-cards">
-    
+                            Selecciona el registro del usuario con el patrimonio (net_worth) más bajo, ordenando en orden ascendente y limitando a 1 registro.
+                            <div id="code-editor-17" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-18.png" alt="">
+                        <img src="./assets/Query/Query-18.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>18. Selecciona el usuario con más hijos.</h3>
                         <p class="description-cards">
-    
+                            Selecciona el registro del usuario con el mayor número de hijos (children_count), ordenando en orden descendente y limitando a 1 registro.
+                            <div id="code-editor-18" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-19.png" alt="">
+                        <img src="./assets/Query/Query-19.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>19. Selecciona el usuario con menos hijos.</h3>
                         <p class="description-cards">
-    
+                            Selecciona el registro del usuario con el menor número de hijos (children_count), ordenando en orden ascendente y limitando a 1 registro.
+                            <div id="code-editor-19" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="./assets/Query-20.png" alt="">
+                        <img src="./assets/Query/Query-20.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>20. Selecciona el número total de usuarios.</h3>
                         <p class="description-cards">
-    
+                            Cuenta el número total de registros en la tabla users.
+                            <div id="code-editor-20" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-21.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>21. Selecciona el número total de usuarios activos.</h3>
                         <p class="description-cards">
-    
+                            Cuenta el número total de usuarios activos (status = 'active') en la tabla users.
+                            <div id="code-editor-21" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-22.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>22. Selecciona el número total de usuarios inactivos.</h3>
                         <p class="description-cards">
-    
+                            Cuenta el número total de usuarios inactivos (status = 'inactive') en la tabla users.
+                            <div id="code-editor-22" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-23.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>23. Selecciona el promedio de edad de todos los usuarios.</h3>
                         <p class="description-cards">
-    
+                            Calcula el promedio de edad (age) de todos los registros en la tabla users.
+                            <div id="code-editor-23" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-24.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>24. Selecciona el promedio de patrimonio de todos los usuarios.</h3>
                         <p class="description-cards">
-    
+                            Calcula el promedio del patrimonio (net_worth) de todos los registros en la tabla users.
+                            <div id="code-editor-24" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-25.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>25. Selecciona el total de activos de todos los usuarios.</h3>
                         <p class="description-cards">
-    
+                            Suma el valor total de los activos (assets) de todos los registros en la tabla users.
+                            <div id="code-editor-25" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-26.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>26. Selecciona el total de pasivos de todos los usuarios.</h3>
                         <p class="description-cards">
-    
+                            Suma el valor total de los pasivos (liabilities) de todos los registros en la tabla users.
+                            <div id="code-editor-26" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-27.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>27. Selecciona los usuarios agrupados por país y cuenta cuántos usuarios hay en cada
                             país.</h3>
                         <p class="description-cards">
-    
+                            Agrupa los registros de la tabla users por el campo country y cuenta el número de usuarios en cada grupo.
+                            <div id="code-editor-27" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-28.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>28. Selecciona los usuarios agrupados por ciudad y cuenta cuántos usuarios hay en cada
                             ciudad.</h3>
                         <p class="description-cards">
-    
+                            Agrupa los registros de la tabla users por el campo city y cuenta el número de usuarios en cada grupo.
+                            <div id="code-editor-28" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-29.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>29. Selecciona el número total de usuarios cuya música favorita es ‘Rock’.</h3>
                         <p class="description-cards">
-    
+                            Cuenta el número total de registros donde el campo favorite_music es 'Rock'.
+                            <div id="code-editor-29" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-30.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>30. Selecciona el número total de usuarios cuyo género es ‘male’ y están activos.</h3>
                         <p class="description-cards">
-    
+                            Cuenta el número total de registros donde el campo gender es 'male' y el campo status es 'active'.
+                            <div id="code-editor-30" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-31.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>31. Selecciona los usuarios ordenados por su número de hijos en forma ascendente.</h3>
                         <p class="description-cards">
-    
+                            Selecciona todos los registros de la tabla users y los ordena por el número de hijos (children_count) en forma ascendente.
+                            <div id="code-editor-31" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-32.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>32. Selecciona los usuarios ordenados por su patrimonio en forma descendente.</h3>
                         <p class="description-cards">
-    
+                            Selecciona todos los registros de la tabla users y los ordena por el patrimonio (net_worth) en forma descendente.
+                            <div id="code-editor-32" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-33.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>33. Selecciona los usuarios cuyo nombre o apellido contiene la letra ‘e’.</h3>
                         <p class="description-cards">
-    
+                            Selecciona todos los registros donde el campo names o last_name contiene la letra 'e'.
+                            <div id="code-editor-33" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-34.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>34. Selecciona el usuario cuyo nombre es ‘Alice’ y su género es ‘female’.</h3>
                         <p class="description-cards">
-    
+                            Selecciona todos los registros donde el campo names es 'Alice' y el campo gender es 'female'.
+                            <div id="code-editor-34" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-35.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>35. Selecciona los usuarios que tienen más de 2 hijos y menos de 5.</h3>
                         <p class="description-cards">
-    
+                            Selecciona todos los registros donde el campo children_count es mayor que 2 y menor que 5.
+                            <div id="code-editor-35" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-36.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>36. Selecciona los usuarios cuyo correo electrónico personal no contiene ‘gmail.com’.</h3>
                         <p class="description-cards">
-    
+                            Selecciona todos los registros donde el campo email no contiene '@gmail.com'.
+                            <div id="code-editor-36" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-37.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>37. Selecciona los usuarios cuyo número de teléfono empieza con ‘555’.</h3>
                         <p class="description-cards">
-    
+                            Selecciona todos los registros donde el campo phone empieza con '555'.
+                            <div id="code-editor-37" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
-                    </div>
-                    <div class="info-query">
-                        <h3>20. Selecciona el número total de usuarios.</h3>
-                        <p class="description-cards">
-    
-                        </p>
-                    </div>
-                </article>
-                <article class="cards">
-                    <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-38.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>38. Selecciona los usuarios que fueron creados en el último mes.</h3>
                         <p class="description-cards">
-    
+                            Selecciona todos los registros donde el campo created_at es mayor o igual a la fecha de hace un mes desde la fecha actual.
+                            <div id="code-editor-38" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-39.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>39. Selecciona los usuarios cuya edad es múltiplo de 5.</h3>
                         <p class="description-cards">
-    
+                            Selecciona todos los registros donde el campo age es múltiplo de 5.
+                            <div id="code-editor-39" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
                 <article class="cards">
                     <div class="img-cards">
-                        <img src="" alt="">
+                        <img src="./assets/Query/Query-40.png" alt="">
                     </div>
                     <div class="info-query">
                         <h3>40. Selecciona los usuarios agrupados por estado y calcula el promedio de patrimonio en
                             cada grupo.</h3>
                         <p class="description-cards">
-    
+                            Agrupa los registros de la tabla users por el campo status y calcula el promedio del patrimonio (net_worth) en cada grupo.
+                            <div id="code-editor-40" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="Update">
+            <h2>Updates</h2>
+            <div class="cards-container">
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-1.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>1. Incrementa la edad de todos los usuarios cuyo país es ‘Canada’ y tienen más de 2 hijos en 2 años.</h3>
+                        <p class="description-cards">
+                            Incrementa el campo age en 2 para todos los registros donde el campo country es 'Canada' y el campo children es mayor que 2.
+                            <div id="code-editor-41" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-2.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>2. Cambia el estado a ‘inactive’ para todos los usuarios cuyo correo personal no contiene ‘work’ y son mayores de 50 años.
+                        </h3>
+                        <p class="description-cards">
+                            Cambia el campo status a 'inactive' para todos los registros donde el campo email no contiene 'work' y el campo age es mayor que 50.
+                            <div id="code-editor-42" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-3.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>3. Cambia el campo status a 'inactive' para todos los registros donde el campo email no contiene 'work' y el campo age es mayor que 50.</h3>
+                        <p class="description-cards">
+                            Duplica el valor del campo assets para todos los registros donde el campo net_worth es menor que 50000.
+                            <div id="code-editor-43" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-4.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>4. Cambia la ciudad a ‘Unknown’ para todos los usuarios que no tienen hijos y están inactivos.</h3>
+                        <p class="description-cards">
+                            Cambia el campo city a 'Unknown' para todos los registros donde el campo children_count es 0 y el campo status es 'inactive'.
+                            <div id="code-editor-44" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-5.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>5. Actualiza el género a ‘female’ para todos los usuarios cuyo nombre contiene la letra ‘a’ y tienen más de 3 hijos.</h3>
+                        <p class="description-cards">
+                            Cambia el campo gender a 'female' para todos los registros donde el campo names contiene la letra 'a' y el campo children_count es mayor que 3.
+                            <div id="code-editor-45" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-6.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>6. Incrementa los pasivos en un 20% para todos los usuarios que tienen activos mayores que 100000.</h3>
+                        <p class="description-cards">
+                            Incrementa el campo liabilities en un 20% para todos los registros donde el campo assets es mayor que 100000.
+                            <div id="code-editor-46" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-7.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>7. Cambia el correo personal a ‘unknown@example.com’ para todos los usuarios cuyo dominio de correo es ‘hotmail.com’.</h3>
+                        <p class="description-cards">
+                            Cambia el campo email a 'unknown@example.com' para todos los registros donde el campo email contiene '@hotmail.com'
+                            <div id="code-editor-47" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-8.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>8. Reduce en 5 años la edad de todos los usuarios cuyo estado es ‘active’ y viven en ‘New York’.</h3>
+                        <p class="description-cards">
+                            Reduce el campo age en 5 para todos los registros donde el campo status es 'active' y el campo city es 'New York'.
+                            <div id="code-editor-48" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-9.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>9. Actualiza el patrimonio a 100000 para todos los usuarios cuyo número de hijos es par.</h3>
+                        <p class="description-cards">
+                            Cambia el campo net_worth a 100000 para todos los registros donde el campo children_count es un número par.
+                            <div id="code-editor-49" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-10.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>10. Cambia la música favorita a ‘Jazz’ para todos los usuarios que tienen más de 2 hijos y están activos.</h3>
+                        <p class="description-cards">
+                            Cambia el campo favorite_music a 'Jazz' para todos los registros donde el campo children_count es mayor que 2 y el campo status es 'active'.
+                            <div id="code-editor-50" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-11.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>11. Incrementa el número de hijos en 1 para todos los usuarios cuyo género es ‘male’ y tienen pasivos menores que 50000.</h3>
+                        <p class="description-cards">
+                            Incrementa el campo children_count en 1 para todos los registros donde el campo gender es 'male' y el campo liabilities es menor que 50000.
+                            <div id="code-editor-51" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-12.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>12. Cambia el estado a ‘active’ para todos los usuarios que tienen un correo electrónico que contiene ‘example’.</h3>
+                        <p class="description-cards">
+                            Cambia el campo status a 'active' para todos los registros donde el campo email contiene 'example'.
+                            <div id="code-editor-52" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-13.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>13. Actualiza la ciudad a ‘New City’ para todos los usuarios cuyo patrimonio es mayor que 200000 y tienen menos de 3 hijos.</h3>
+                        <p class="description-cards">
+                            Cambia el campo city a 'New City' para todos los registros donde el campo net_worth es mayor que 200000 y el campo children_count es menor que 3.
+                            <div id="code-editor-53" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-14.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>14. Duplica el patrimonio para todos los usuarios cuyo género es ‘female’ y están inactivos.</h3>
+                        <p class="description-cards">
+                            Duplica el valor del campo net_worth para todos los registros donde el campo gender es 'female' y el campo status es 'inactive'.
+                            <div id="code-editor-54" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-15.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>15. Cambia el país a ‘Unknown’ para todos los usuarios cuya edad es mayor que 70.</h3>
+                        <p class="description-cards">
+                            Cambia el campo country a 'Unknown' para todos los registros donde el campo age es mayor que 70.
+                            <div id="code-editor-55" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-16.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>16. Incrementa los activos en 50000 para todos los usuarios cuyo nombre empieza con ‘J’ y tienen más de 1 hijo.</h3>
+                        <p class="description-cards">
+                            Incrementa el campo assets en 50000 para todos los registros donde el campo names empieza con 'J' y el campo children_count es mayor que 1.
+                            <div id="code-editor-56" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-17.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>17. Cambia el teléfono a ‘000-000-0000’ para todos los usuarios cuyo correo electrónico contiene ‘test’.</h3>
+                        <p class="description-cards">
+                            Cambia el campo phone a '000-000-0000' para todos los registros donde el campo email contiene 'test'.
+                            <div id="code-editor-57" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-18.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>18. Reduce los activos a la mitad para todos los usuarios cuyo estado es ‘inactive’ y tienen más de 4 hijos.</h3>
+                        <p class="description-cards">
+                            Reduce el campo assets a la mitad para todos los registros donde el campo status es 'inactive' y el campo children_count es mayor que 4.
+                            <div id="code-editor-58" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-19.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>19. Cambia la música favorita a ‘Classical’ para todos los usuarios cuya edad es mayor que 60 y viven en ‘USA’.</h3>
+                        <p class="description-cards">
+                            Cambia el campo favorite_music a 'Classical' para todos los registros donde el campo age es mayor que 60 y el campo country es 'USA'.
+                            <div id="code-editor-59" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Update/Update-20.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>20. Incrementa el número de hijos en 2 para todos los usuarios cuyo estado es ‘active’ y tienen activos menores que 50000.</h3>
+                        <p class="description-cards">
+                            Incrementa el campo children_count en 2 para todos los registros donde el campo status es 'active' y el campo assets es menor que 50000.
+                            <div id="code-editor-60" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="Delete">
+            <h2>Deletes</h2>
+            <div class="cards-container">
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Delete/Delete-1.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>1. Elimina todos los usuarios que tienen más de 3 hijos y cuyo patrimonio es menor que 100000.</h3>
+                        <p class="description-cards">
+                            Elimina todos los registros de la tabla users donde el campo children_count es mayor que 3 y el campo net_worth es menor que 100000.
+                            <div id="code-editor-61" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Delete/Delete-2.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>2. Elimina todos los usuarios cuyo correo personal contiene ‘spam’ y tienen más de 50 años.</h3>
+                        <p class="description-cards">
+                            Elimina todos los registros donde el campo email contiene 'spam' y el campo age es mayor que 50.
+                            <div id="code-editor-62" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Delete/Delete-3.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>3. Elimina todos los usuarios que no tienen activos pero tienen pasivos mayores que 0.</h3>
+                        <p class="description-cards">
+                            Elimina todos los registros donde el campo assets es igual a 0 y el campo liabilities es mayor que 0.
+                            <div id="code-editor-63" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Delete/Delete-4.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>4. Elimina todos los usuarios que están inactivos y cuyo nombre o apellido contiene la letra ‘z’.</h3>
+                        <p class="description-cards">
+                            Elimina todos los registros donde el campo status es 'inactive' y el campo names o last_name contiene la letra 'z'.
+                            <div id="code-editor-64" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Delete/Delete-5.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>5. Elimina todos los usuarios cuyo número de teléfono contiene la secuencia ‘123’ y tienen más de 2 hijos.</h3>
+                        <p class="description-cards">
+                            Elimina todos los registros donde el campo phone contiene '123' y el campo children_count es mayor que 2.
+                            <div id="code-editor-65" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Delete/Delete-6.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>6. Elimina todos los usuarios que viven en ‘Unknown’ y cuyo estado es ‘inactive’.</h3>
+                        <p class="description-cards">
+                            Elimina todos los registros donde el campo city es 'Unknown' y el campo status es 'inactive'.
+                            <div id="code-editor-66" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Delete/Delete-7.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>7. Elimina todos los usuarios que fueron creados antes del año 2000 y cuyo país es ‘USA’.</h3>
+                        <p class="description-cards">
+                            Elimina todos los registros donde el campo created_at es anterior al 1 de enero de 2000 y el campo country es 'USA'.
+                            <div id="code-editor-67" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Delete/Delete-8.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>8. Elimina todos los usuarios cuyo patrimonio es negativo y tienen el estado ‘active’.</h3>
+                        <p class="description-cards">
+                            Elimina todos los registros donde el campo net_worth es negativo y el campo status es 'active'.
+                            <div id="code-editor-68" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Delete/Delete-9.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>9. Elimina todos los usuarios cuyo correo electrónico termina en ‘example.com’ y tienen activos mayores que 50000.</h3>
+                        <p class="description-cards">
+                            Elimina todos los registros donde el campo email termina en '@example.com' y el campo assets es mayor que 50000.
+
+                            <div id="code-editor-69" class="code-editor"></div>
+                        </p>
+                    </div>
+                </article>
+                <article class="cards">
+                    <div class="img-cards">
+                        <img src="./assets/Delete/Delete-10.png" alt="">
+                    </div>
+                    <div class="info-query">
+                        <h3>10. Elimina todos los usuarios que tienen más de 5 hijos y cuyo correo personal no contiene ‘family’.</h3>
+                        <p class="description-cards">
+                            Elimina todos los registros donde el campo children_count es mayor que 5 y el campo email no contiene 'family'.
+                            <div id="code-editor-70" class="code-editor"></div>
                         </p>
                     </div>
                 </article>
             </div>
         </section>
     </main>
+    <footer id="Contact" class="container">
+        <hr>
+        <div class="contact-content">
+            <p><b>&copy; Jhon-Develop</b>, 2024</p>
+            <div class="contact-links">
+                <a href="https://wa.link/ynbio7" target="_blank">Whatsapp</a>
+                <a href="https://github.com/Jhon-Develop" target="_blank">Github</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=asprillajhon73@gmail.com&su=Quiero%20conocer%20tus%20servicios&body=Buenas,%20espero%20que%20se%20encuentre%20muy%20bien." target="_blank">Gmail</a>
+            </div>
+        </div>
+    </footer>
+    <button id="backToTopBtn" title="Back to top">&#9650;</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.23.0/min/vs/loader.min.js"></script>
+    <script src="./App.js"></script>
 </body>
+
 </html>
